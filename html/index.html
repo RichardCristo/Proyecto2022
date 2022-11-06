@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>El Palacio</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid estiloNavbar">
+     <img class="navbar-brand estiloLogo" href="#" src="logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item navbarItem">
+            <a class="nav-link active navbarLink itemColor" aria-current="page" href="#">MENU</a>
+          </li>
+          <li class="nav-item navbarItem">
+            <a class="nav-link navbarLink itemColor" href="#">LOCALES</a>
+          </li>
+          <li class="nav-item navbarItem">
+            <button class="boton-carrito" onclick="prueba()"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito"></span></button>
+          </li>
+        </ul>
+      </div>
+    
+    </div>
+  </nav>
+  <!--
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col">
+        
+      </div>
+      <div class="col">
+        <div id="carouselExampleSlidesOnly" class="carousel slide carrouselestilo " data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="foto1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="foto2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="foto3.webp" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+    
+      </div>
+  </div>-->
+
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="burga clasica.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">La Clasica</h5>
+            <p class="card-text">Hamburguesa de carne 120g, con cheddar, lechuga, tomate y salsa de la casa </p>
+            <p class="card-text">Precio: $1000</p>
+            <a href="#" class="btn btn-primary colorBoton" onclick= "agregarAlCarritoClasica()">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="burga panceta.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">La Noble</h5>
+            <p class="card-text">Hamburguesa de carne 120g, con cheddar, panceta crocante, cebolla morada y salsa de la casa</p>
+            <p class="card-text">Precio: $1000</p>
+            <a href="#" class="btn btn-primary colorBoton" onclick= "agregarAlCarritoNoble()">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="burga pepinoide.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">La Monarca</h5>
+            <p class="card-text">Hamburguesa de carne de 120g, con cheddar, pepino, cebolla y salsa de la casa</p>
+            <p class="card-text">Precio: $1000</p>
+            <a href="#" class="btn btn-primary colorBoton" onclick= "agregarAlCarritoMonarca()">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="burga pollo.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chicken Especial</h5>
+            <p class="card-text">Medallon de pollo con cheddar, tomate, lechuga y salsa de la casa</p>
+            <p class="card-text">Precio: $900</p>
+            <a href="#" class="btn btn-primary colorBoton" onclick= "agregarAlCarritoPollo()">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="burga simple.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cheeseburger</h5>
+            <p class="card-text">Hamburguesa de carne 120g, con cheddar y salsa de la casa</p>
+            <p class="card-text">Precio: $1000</p>
+            <a href="#" class="btn btn-primary colorBoton" onclick= "agregarAlCarritoQueso()">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="burge veggie.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Soy Vegana</h5>
+            <p class="card-text">Medallon Beyond Meat, con cheddar, tomate y lechuga</p>
+            <p class="card-text">Precio: $1200</p>
+            <a href="#" class="btn btn-primary colorBoton" onclick= "agregarAlCarritoVegana()">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>PEDIDO: </p>
+  <p id="datosClasica"></p>
+  <p id="datosNoble"></p>
+  <p id="datosMonarca"></p>
+  <p id="datosPollo"></p>
+  <p id="datosQueso"></p>
+  <p id="datosVegana"></p>
+
+ <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52571.43933030598!2d-58.52352474437199!3d-34.560771782348425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb72116933aad%3A0xbfbac3b083009658!2sDean%20%26%20Dennys%20-%20Villa%20Urquiza!5e0!3m2!1ses!2sar!4v1667768475266!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+
+  <footer class="footer">
+    <div class="conteiner2">
+        <div class="row">
+            <div class="footer-col">
+                <h4 class="footer-text">Nuestras Redes</h4>
+                <div class = "social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div> 
+    </div>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
