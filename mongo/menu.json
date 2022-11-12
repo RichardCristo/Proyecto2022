@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "6368effda14f1aba1832c7b8"
+  },
+  "Nombre": "La Clasica",
+  "Precio": 1000,
+  "Ingredientes": "Hamburguesa de carne 120g, con cheddar, lechuga, tomate y salsa de la casa"
+},{
+  "_id": {
+    "$oid": "636901b9a14f1aba1832c7b9"
+  },
+  "Nombre": "La Noble",
+  "Precio": 1000,
+  "Ingredientes": "Hamburguesa de carne 120g, con cheddar, panceta crocante, cebolla morada y salsa de la casa"
+},{
+  "_id": {
+    "$oid": "63690247a14f1aba1832c7ba"
+  },
+  "Nombre": "La Monarca",
+  "Precio": 1000,
+  "Ingredientes": "Hamburguesa de carne de 120g, con cheddar, pepino, cebolla y salsa de la casa"
+},{
+  "_id": {
+    "$oid": "6369028ca14f1aba1832c7bb"
+  },
+  "Nombre": "Chicken Special",
+  "Precio": 900,
+  "Ingredientes": "Medallon de pollo con cheddar, tomate, lechuga y salsa de la casa"
+},{
+  "_id": {
+    "$oid": "636902cfa14f1aba1832c7bc"
+  },
+  "Nombre": "Cheeseburger",
+  "Precio": 1000,
+  "Ingredientes": "Hamburguesa de carne 120g, con cheddar y salsa de la casa"
+},{
+  "_id": {
+    "$oid": "6369035fa14f1aba1832c7bd"
+  },
+  "Nombre": "Soy Vegana",
+  "Precio": 1200,
+  "Ingredientes": "Medallon Beyond Meat, con cheddar, tomate y lechuga"
+}]
